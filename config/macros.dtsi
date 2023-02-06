@@ -34,3 +34,13 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  as: auto_shift {
+    compatible = "zmk,behavior-hold-tap";
+    label = "AUTO_SHIFT";
+    #binding-cells = <2>;
+    tapping_term_ms = <175>;
+    quick_tap_ms = <0>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+  };
